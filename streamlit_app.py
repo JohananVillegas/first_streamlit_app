@@ -42,27 +42,9 @@ my_data_rows = my_cur.fetchall()
 streamlit.header("The fruit load list contains:")
 streamlit.dataframe(my_data_rows)
 
-# fruit_choice = streamlit.text_input('What fruit would you like information about?')
- #if not fruit_choice:
-    #streamlit.error("Please select a fruit to get information.")
- #else:
- # fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
- #  streamlit.text(fruityvice_response.json)
+add_my_fruit = streamlit.text_input('What fruit would you like to add?')
+streamlit.write('Thanks for adding', add_my_fruit)
 
-  # fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
-   # streamlit.dataframe(fruityvice_normalized)
-
-#except URLError as e:
- #streamlit.error()
-
-#dont run anything past here while we troubleshoot 
-#streamlit.stop()
-
-
-
-
-#add_my_fruit = streamlit.text_input('What fruit would you like to add?')
-#streamlit.write('Thanks for adding', add_my_fruit)
 
 
 #This will not work correcly, but just go with for now
